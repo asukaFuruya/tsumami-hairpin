@@ -1,0 +1,117 @@
+.footer-container{
+    display: flex;
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.footer-container p {
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+}
+
+.footer-divider {
+    border-top: 0.5px solid #fff;
+    width: 100%;
+}
+
+.footer-content{
+      display: flex;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .social-links{
+    margin-left: 2rem;
+}
+
+.social-links a {
+    display: inline-flex;          /* アイコンと背景を整列 */
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;       /* 白丸の背景 */
+    border-radius: 50%;            /* 完全な丸にする */
+    padding: 0.5rem;
+    margin: 0 0.5rem;                 /* 丸の大きさ調整 */
+  }
+
+  .social-links img {
+    width: 1.2rem;  /* アイコンサイズ */
+    height: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container h2{
+      font-size: 1.2rem;
+    }
+  
+    .footer-container p{
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+    .sp-break{
+        display: block;
+      }
+      .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .social-links{
+        margin: 1.5rem 0 2rem 0;
+      }
+
+      .social-links a:first-child{
+        margin-left: 0;
+      }
+  }
+  .hamburger {
+  display: none; /* PCでは非表示 */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hairpin_r,
+.hairpin_l {
+  width: 0.5rem;
+}
+
+.hairpin_r{
+  rotate: 90deg;
+  position: absolute;
+  top: 1rem;
+}
+
+.hairpin_l{
+  rotate: 90deg;
+  position: absolute;
+  top: 2rem;
+}
+
+@media (max-width: 768px) {
+  /* ハンバーガー表示 */
+  .hamburger {
+    display: block;
+    /* width: 30px; */
+    cursor: pointer;
+  }
+
+ 
+  /* メニューはデフォルト非表示 */
+  .menu-container ul {
+    display: none;
+    gap: 15px;
+    background: #1f2229;
+    padding: 20px;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+  }
+
+  /* open クラスが付いた時だけ表示 */
+  .menu-container ul.open {
+    display: flex;
+  }
+}

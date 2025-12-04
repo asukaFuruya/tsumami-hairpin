@@ -1,0 +1,65 @@
+.making-page-container{
+  margin-top: 5rem;
+}
+
+.making-page-container button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: solid 0.5px #fff; /* 和風の金色 */
+  color: #fff;
+  font-family: "Shippori Mincho", serif;
+}
+
+.making-page-button-prev::before {
+  content: "◁";
+  position: relative;
+  top: 0;
+  right: 0.5rem;
+  font-size: 0.7rem;
+  color: #fff;
+}
+.making-page-button-prev:hover::before,
+.making-page-button-prev:hover::after {
+  color: #8b813d;
+}
+
+.making-page-button-next::after {
+  content: "▷";
+  position: relative;
+  top: 0;
+  right: -0.5rem;
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+.making-page-button-prev:hover,
+.making-page-button-next:hover {
+  border: solid 0.5px #8b813d; /* 和風の金色 */
+  color: #8b813d;
+  transition: color 0.3s ease;
+}
+
+.making-page-button-prev:hover::before,
+.making-page-button-next:hover::after {
+  color: #8b813d;
+}
+
+.making-page-button {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.fade-wrapper {
+  transition: opacity 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}

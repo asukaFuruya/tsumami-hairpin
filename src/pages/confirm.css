@@ -1,0 +1,105 @@
+.confirm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.confirm-container h3 {
+  font-size: 0.7rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.confirm-group {
+  width: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+.confirm-label {
+  margin-right: 2rem;
+}
+
+.confirm-container button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: solid 0.5px #fff; /* 和風の金色 */
+  color: #fff;
+  font-family: "Shippori Mincho", serif;
+  margin-top: 4rem;
+}
+
+.confirm-page-button-prev::before {
+  content: "◁";
+  position: relative;
+  top: 0;
+  right: 0.5rem;
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+.confirm-page-button-prev:hover::before,
+.confirm-page-button-prev:hover::after {
+  color: #d4c000;
+}
+
+.confirm-page-button-next::after {
+  content: "▷";
+  position: relative;
+  top: 0;
+  right: -0.5rem;
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+.confirm-page-button-prev:hover,
+.confirm-page-button-next:hover {
+  border: solid 0.5px #d4c000; /* 和風の金色 */
+  color: #d4c000;
+  transition: color 0.3s ease;
+}
+
+.confirm-page-button-prev:hover::before,
+.confirm-page-button-next:hover::after {
+  color: #d4c000;
+}
+
+.confirm-page-button {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .confirm-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .confirm-container h3 {
+    font-size: 0.5rem;
+  }
+
+  .confirm-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .confirm-container p{
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  
+  .confirm-group {
+    width: 20rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .confirm-label{
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.about-page-container{
+  margin-top: 5rem;
+  overflow-x: hidden;
+}
+
+.about-page-container button {
+  display: none;
+  position: relative;
+}
+
+.about-slider-container {
+  animation: slider 25s linear infinite;
+  overflow: hidden;
+  width: 220%;
+  margin-top: -5rem;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } /* スライダー1つ分を左にスライド */
+}

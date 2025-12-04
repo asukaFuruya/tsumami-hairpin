@@ -1,0 +1,97 @@
+.news-each-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.news-each-container img {
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.news-each-container p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.news-each-container h3 {
+  font-size: 0.7rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.news-each-container button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: solid 0.5px #d4c000; /* 和風の金色 */
+  color: #d4c000;
+  font-family: "Shippori Mincho", serif;
+  margin-top: 4rem;
+}
+
+.news-each-container button::after {
+  content: "▷";
+  position: relative;
+  top: 0;
+  right: -0.5rem;
+  font-size: 0.7rem;
+  color: #d4c000;
+}
+
+.news-each-container button:hover {
+  border: solid 0.5px #8b813d; /* 和風の金色 */
+  color: #8b813d;
+  transition: color 0.3s ease;
+}
+
+.news-each-container button:hover::after {
+  color: #8b813d;
+}
+
+.news-each-container dl {
+  text-align: center;
+}
+
+.news-each-container dt {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+.news-each-container dd {
+  margin-left: 0;
+}
+
+.news-each-container dd:last-child {
+  margin-bottom: 2rem;
+}
+
+.news_20250519-img {
+  display: flex;
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .news-each-container h2{
+    font-size: 1.2rem;
+  }
+  .news-each-container h3{
+    font-size: 0.5rem;
+  }
+  
+  .news-each-container p{
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .sp-break {
+    display: block;
+  }
+
+  .news_20250519-img{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

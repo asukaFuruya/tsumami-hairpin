@@ -1,0 +1,107 @@
+.about-slider img {
+  position: absolute;
+}
+
+.making_1 {
+  width: 20rem;
+  top: 3rem;
+}
+
+.making_2 {
+  width: 20rem;
+  top: 0;
+  left: 25rem;
+}
+.making_3 {
+  width: 15rem;
+  top: 0;
+  left: 60rem;
+}
+.making_4 {
+  width: 20rem;
+  top: 42rem;
+  left: 3rem;
+}
+.making_5 {
+  width: 25rem;
+  top: 37rem;
+  left: 40rem;
+}
+.making_6 {
+  width: 15rem;
+  top: 25rem;
+  left: 73rem;
+}
+
+.about-slider ul li {
+  position: absolute;
+  list-style: none;
+  writing-mode: vertical-rl;
+}
+
+.title_1 {
+  top: 22rem;
+  left: 10rem;
+}
+
+.title_2 {
+  top: 6rem;
+  left: 50rem;
+}
+
+.title_3 {
+  top: 3rem;
+  left: 80rem;
+}
+
+.title_4 {
+  top: 44rem;
+  left: 31rem;
+}
+
+.title_5 {
+  top: 48rem;
+  left: 73rem;
+}
+.title_6 {
+  top: 28rem;
+  left: 65rem;
+}
+
+.about-slider p {
+  position: absolute;
+  font-size: 0.8rem;
+}
+
+.text_1 {
+  top: 30rem;
+  left: 9rem;
+}
+
+.text_2 {
+  top: 16rem;
+  left: 50rem;
+}
+
+.text_3 {
+  top: 57rem;
+  left: 46rem;
+}
+
+.text_4 {
+  top: 36rem;
+  left: 75rem;
+}
+
+.about-slider {
+  display: flex;
+  position: relative;
+  top: 10rem;
+  height: 70rem;
+  margin-top: -10rem;
+}
+
+.about-slider-repeat {
+  width: 1500px;
+  position: relative;
+}

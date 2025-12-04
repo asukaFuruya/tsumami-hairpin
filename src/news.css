@@ -1,0 +1,36 @@
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 13rem;
+}
+
+.news-container h3 {
+  font-size: 0.7rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.news-divider {
+  border-top: 0.5px solid #fff;
+  width: 100%;
+  margin: 2rem 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .news-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .news-container h3 {
+    font-size: 0.5rem;
+  }
+
+  .news-container p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+}

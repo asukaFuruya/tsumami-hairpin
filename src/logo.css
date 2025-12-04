@@ -1,0 +1,28 @@
+.logo_pc {
+  width: 10rem;
+  top: 2rem;
+  left: 2rem;
+  position: fixed;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.logo_sp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logo_pc {
+    display: none;
+  }
+
+  .logo_sp {
+    display: block;
+    width: 2.5rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+  }
+}

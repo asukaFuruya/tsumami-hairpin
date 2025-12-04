@@ -1,0 +1,22 @@
+.news-article-container {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.news-article-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-article-container img {
+    width: 7rem;
+    height: 5rem;       /* 高さを固定 */
+    object-fit: cover;  /* 画像の縦横比を維持しつつトリミング */
+    object-position: center; /* 画像の中心を基準にトリミング */
+}
+
+.news-article-day{
+    font-size: 0.7rem;
+    margin-top: -0.5rem;
+}
