@@ -2,7 +2,7 @@ import "./App.css";
 import Footer from "./Footer";
 import { Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
-import Logo from "./logo";
+import Logo from "./Logo";
 import MainPage from "./pages/MainPage";
 import MakingPage from "./pages/MakingPage";
 import News_20250519 from "./pages/News_20250519";
